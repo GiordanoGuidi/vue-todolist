@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    <div class="container">
+        <div id="root">
+            <ul class="list-group">
+                <li v-for="task in tasks" :class="{'text-decoration-line-through': task.done}" class="list-group-item">{{task.text}}</li>
+              </ul>
+        </div>
+    </div>
     
     
 </body>
